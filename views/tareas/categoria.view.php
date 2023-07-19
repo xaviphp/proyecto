@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["categoria"])) {
+        $_SESSION["categoria_seleccionada"] = $_POST["categoria"];
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +21,7 @@
 	<div class="wrap">
 		<form action="añadir_tarea.php" method="post">
 			<p>Selecciona la categoria</p>
-			<select name="id" id="id" class="form-control">
+			<select name="categoria" id="categoria" class="form-control">
 				<option value=""></option>
 				<?php foreach ($resultadosconsulta as $resultadoconsulta): ?>
                     <option><?php echo $resultadoconsulta['nombre_categoria']; ?></option>

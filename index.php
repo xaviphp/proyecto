@@ -28,7 +28,7 @@
 
         // Mostrar opciones de categorías en el desplegable
         foreach ($categorias as $categoria) {
-          echo '<li><a href="formulario.php?categoria=' . urlencode($categoria) . '">' . $categoria . '</a></li>';
+          echo '<li><a href="lista_tareas.php?categoria=' . urlencode($categoria) . '">' . $categoria . '</a></li>';
         }
         ?>
       </ul>
