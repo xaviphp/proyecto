@@ -75,16 +75,16 @@ body {
   
   .form-group input[type="text"],
   .form-group input[type="date"] {
-    width: 100%;
-    padding: 10px; /* Ajusta el tamaÃÂ±o del padding */
-    font-size: 16px; /* Ajusta el tamaÃÂ±o del texto */
+    width: 92%;
+    padding: 10px; /* Ajusta el tamaño del padding */
+    font-size: 16px; /* Ajusta el tamaño del texto */
     border: 1px solid #ccc;
     border-radius: 4px;
   }
   
   button[type="submit"] {
     display: block;
-    width: 108%;
+    width: 100%;
     padding: 13px;
     text-align: center;
     background-color: #777;

@@ -1,11 +1,3 @@
-<?php
-session_start();
-
-if (isset($_GET["categoria"])) {
-    $_SESSION["categoria"] = $_GET["categoria"];
-}
-echo$_SESSION["categoria"];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

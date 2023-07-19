@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Añadir Actividad</title>
-  <link rel="stylesheet" type="text/css" href="../css/estilo_aÃ±adir-editar.css>
+  <title>Añdir Actividad</title>
+  <link rel="stylesheet" type="text/css" href="../css/estilo_añadir-editar.css>
 </head>
 <body>
-  <h1>Añadir Actividad</h1>
+  <h1>Añdir Actividad</h1>
 
   <div class="container">
     <div class="main-content">
@@ -16,11 +16,11 @@
           <input type="text" id="titulo" name="titulo" required>
         </div>
         <div class="form-group">
-          <label for="descripcion">Descripción</label>
+          <label for="descripcion">Descripció</label>
           <input type="text" id="descripcion" name="descripcion">
         </div>
         <div class="form-group">
-          <label for="fecha_creacion">Fecha de Creación</label>
+          <label for="fecha_creacion">Fecha de Creació</label>
           <input type="date" id="fecha_creacion" name="fecha_creacion" required>
         </div>
         <div class="form-group">
@@ -28,14 +28,14 @@
           <input type="date" id="fecha_actividad" name="fecha_actividad" required>
         </div>
         <div class="form-group">
-          <label for="duracion">Duración</label>
+          <label for="duracion">Duració</label>
           <input type="text" id="duracion" name="duracion">
         </div>
         <div class="form-group">
           <label for="estado">Estado</label>
           <input type="text" id="estado" name="estado">
         </div>
-        <button type="submit">Añadir tarea</button>
+        <button type="submit">Añdir tarea</button>
       </form>
     </div>
   </div>
