@@ -28,5 +28,5 @@ $statement->execute(
 //Revisar si se ha enviado todo OK
 echo "OK Todo enviado";
 }
-require './views/tareas/añadir_tarea.view.php';
+require './views/tareas/editar_tarea.view.php';
 ?>

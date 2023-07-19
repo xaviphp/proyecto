@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Añadir Actividad</title>
-  <link rel="stylesheet" type="text/css" href="estilo-prueba.css">
+  <title>Editar Actividad</title>
+  <link rel="stylesheet" type="text/css" href="estilo_añadir-editar.css">
 </head>
 <body>
-  <h1>Añadir Actividad</h1>
+  <h1>Editar Actividad</h1>
 
   <div class="container">
     <div class="main-content">
       <h2>Formulario</h2>
-      <form action="formulario.php" method="POST">
+      <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
         <div class="form-group">
           <label for="titulo">Título</label>
           <input type="text" id="titulo" name="titulo" required>
@@ -35,7 +35,7 @@
           <label for="estado">Estado</label>
           <input type="text" id="estado" name="estado">
         </div>
-        <button type="submit">Añadir Actividad</button>
+        <button type="submit">Editar Actividad</button>
       </form>
     </div>
   </div>

@@ -15,7 +15,7 @@ try {
 			$resultadosconsulta = $statementconsulta->fetchAll();
 			//Como mostramos los datos
 
-	require './views/lista_tareas/lista_tareas.view.php';
+	require './views/tareas/lista_tareas.view.php';
 
 
 

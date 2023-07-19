@@ -7,7 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="../css/estilo_lista_tareas.css">
 </head>
 <body>
 <h1>Mis Tareas</h1>
@@ -31,7 +31,7 @@
                     <td><?php echo $resultadoconsulta['estado']; ?></td></tr>
                 <?php endforeach; ?>
 		</table>
-        <a href="añadirtareas.view.php" target="">Crear Tarea</a>
+        <a href="categoria.php" target="">Crear Tarea</a>
 	
 	</div>
 </body>
