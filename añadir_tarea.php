@@ -1,6 +1,6 @@
 <?php
 // Verificar si se ha enviado el formulario
-echo $_SESSION["categoria_seleccionada"];
+echo $_SESSION["categoria"];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Obtener los valores del formulario
   $titulo = $_POST['titulo'];

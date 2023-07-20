@@ -30,7 +30,7 @@
                     <td><?php echo $resultadoconsulta['estado']; ?></td></tr>
                 <?php endforeach; ?>
 		</table>
-        <a href="categoria.php" target="">Crear Tarea</a>
+        <a href="añadir_tarea.php" target="">Crear Tarea</a>
 	
 	</div>
 </body>
