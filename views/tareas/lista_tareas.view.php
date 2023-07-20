@@ -15,15 +15,11 @@
 			<tr>
 				<th>Titulo</th>
 				<th>Descripción</th>
-				<th>Fecha de creación</th>
 				<th>Fecha de actividad</th>
-                <th>Duración</th>
-                <th>Estado</th>
-               
 			</tr>
 			<?php foreach ($resultadosconsulta as $resultadoconsulta): ?>
                     <tr><td><?php echo $resultadoconsulta['titulo']?></td> 
-					<td><?php echo $resultadoconsulta['descripción']?></td>
+					<td><?php echo $resultadoconsulta['descripcion']?></td>
 					<td><?php echo $resultadoconsulta['fecha_actividad']; ?></td>
                 <?php endforeach; ?>
 		</table>
