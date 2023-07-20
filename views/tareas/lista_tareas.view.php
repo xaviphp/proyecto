@@ -24,10 +24,7 @@
 			<?php foreach ($resultadosconsulta as $resultadoconsulta): ?>
                     <tr><td><?php echo $resultadoconsulta['titulo']?></td> 
 					<td><?php echo $resultadoconsulta['descripción']?></td>
-					<td><?php echo $resultadoconsulta['fecha_creación']?></td>
 					<td><?php echo $resultadoconsulta['fecha_actividad']; ?></td>
-                    <td><?php echo $resultadoconsulta['duración']; ?></td>
-                    <td><?php echo $resultadoconsulta['estado']; ?></td></tr>
                 <?php endforeach; ?>
 		</table>
         <a href="añadir_tarea.php" target="">Crear Tarea</a>
