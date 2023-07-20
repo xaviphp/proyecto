@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Añdir Actividad</title>
-  <link rel="stylesheet" type="text/css" href="../css/estilo_añadir-editar.css">
+  <title>Añadir Actividad</title>
+  <link rel="stylesheet" type="text/css" href="css/estilo_añadir-editar.css">
 </head>
 <body>
   <h1>Añadir Actividad</h1>

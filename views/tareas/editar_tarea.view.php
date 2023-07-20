@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Editar Actividad</title>
-  <link rel="stylesheet" type="text/css" href="estilo_añadir-editar.css">
+  <link rel="stylesheet" type="text/css" href="css/estilo_añadir-editar.css">
 </head>
 <body>
   <h1>Editar Actividad</h1>
