@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Verificar si se ha enviado el formulario
 echo $_SESSION["categoria"];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
