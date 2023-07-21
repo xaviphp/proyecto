@@ -19,11 +19,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 
-$statement = $conexion->prepare('INSERT INTO tarea VALUES (null, 1, 1, :titulo, :descripcion, now(), :fechaActividad, :duracion)');
+$statement = $conexion->prepare('INSERT INTO tarea VALUES (null, 1, 1, :titulo, :descripcion, NOW(), :fechaActividad, :duracion, "false")');
 //Revisar si la sentencia SQL es correcta
 echo "OK sentencia correcta </br>";
 $statement->execute(
-  array(':titulo'=> $titulo, ':descripcion'=> $descripcion, ':fechaActividad'=> $fechaActividad, ':duracion'=> $duracion, false )
+  array(':titulo'=> $titulo, ':descripcion'=> $descripcion, ':fechaActividad'=> $fechaActividad, ':duracion'=> $duracion )
 );
 //Revisar si se ha enviado todo OK
 echo "OK Todo enviado";

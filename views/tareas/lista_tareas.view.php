@@ -23,7 +23,7 @@
 					<td><?php echo $resultadoconsulta['fecha_actividad']; ?></td>
                 <?php endforeach; ?>
 		</table>
-        <a href="andir_tarea.php" target="">Crear Tarea</a>
+        <a href="anadir_tarea.php" target="">Crear Tarea</a>
 	
 	</div>
 </body>
