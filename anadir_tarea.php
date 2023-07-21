@@ -1,7 +1,6 @@
 <?php
 session_start();
 // Verificar si se ha enviado el formulario
-echo $_SESSION["categoria"];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Obtener los valores del formulario
   $titulo = $_POST['titulo'];
@@ -27,6 +26,8 @@ $statement = $conexion->prepare("INSERT INTO tarea VALUES (null, 1, $num, :titul
 echo "OK sentencia correcta </br>";
 $statement->execute(
   array(':titulo'=> $titulo, ':descripcion'=> $descripcion, ':fechaActividad'=> $fechaActividad, ':duracion'=> $duracion )
+
+  
 );
 //Revisar si se ha enviado todo OK
 echo "OK Todo enviado";

@@ -5,7 +5,7 @@
   <link rel="stylesheet" type="text/css" href="css/estilo_anadir-editar.css">
 </head>
 <body>
-  <h1>Añadir Actividad</h1>
+  <h1>Añadir Actividad <?php echo $_SESSION["categoria"]; ?></h1>
 
   <div class="container">
     <div class="main-content">
@@ -27,6 +27,7 @@
           <input type="text" id="duracion" name="duracion">
         </div>
         <button type="submit">Añadir tarea</button>
+        <a href="index.php" target="">Volver</a>
       </form>
     </div>
   </div>
