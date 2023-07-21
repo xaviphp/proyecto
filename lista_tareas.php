@@ -15,13 +15,11 @@ if (isset($_SESSION["categoria"])) {
     $nombre_categoria = $_SESSION["categoria"];
     
     // Consulta SQL utilizando la variable $nombre_categoria
-    $statementconsulta = $conexion->query("SELECT titulo, descripcion, fecha_actividad FROM tarea INNER JOIN categoria on tarea.id_categoria = categoria.id WHERE categoria.nombre_categoria = '$nombre_categoria'");
+    $statementconsulta = $conexion->query("SELECT titulo, descripcion, fecha_actividad FROM tarea INNER JOIN categoria on tarea.id_categoria = categoria.id WHERE categoria.nombre_categoria = '$nombre_categoria' ORDER BY tarea.fecha_actividad DESC");
     $resultadosconsulta = $statementconsulta->fetchAll();
 }
 
 
 	require './views/tareas/lista_tareas.view.php';
-
-
 
 ?>
