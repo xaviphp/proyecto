@@ -14,7 +14,7 @@
           <label for="titulo">id de tarea</label>
           <input type="number" id="idtarea" name="idtarea" required>
           <label for="titulo">Título</label>
-          <input type="text" id="titulo" name="titulo" required>
+          <input type="text" id="titulo" name="titulo" value="<?php echo $titulo ?>">
         </div>
         <div class="form-group">
           <label for="descripcion">Descripción</label>

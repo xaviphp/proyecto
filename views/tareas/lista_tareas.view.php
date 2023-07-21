@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="css/estilo_lista_tareas.css">
 </head>
 <body>
-<h1>Mis Tareas</h1>
 	<div>
 	<div class="container">
     <div class="header">
@@ -21,7 +20,8 @@
 	<!-- Mostrar las tareas agrupadas por fecha -->
 	<?php foreach ($resultadosconsulta as $resultadoconsulta): ?>
 		<div class="fecha-group">
-			<h3 class="fecha-titulo"><?php echo $resultadoconsulta['fecha_actividad']; ?></h3>
+			
+			<h3 class="fecha-titulo"><a href="/editar_tarea.php?id=<?php $resultadoconsulta['id'] ?>"><?php echo $resultadoconsulta['fecha_actividad']; ?></a></h3>
 			
 			<?php foreach ($resultadosconsulta as $resultadoconsulta): ?>
             <div class="nota">
