@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 
-$statement = $conexion->prepare('INSERT INTO tarea VALUES (1, 1, 1, :titulo, :descripcion, :fechaCreacion, :fechaActividad, :duracion, :estado)');
+$statement = $conexion->prepare('UPDATE tarea VALUES (1, 1, 1, :titulo, :descripcion, :fechaCreacion, :fechaActividad, :duracion, :estado)');
 //Revisar si la sentencia SQL es correcta
 echo "OK sentencia correcta </br>";
 $statement->execute(

@@ -9,7 +9,6 @@
 
   <div class="container">
     <div class="main-content">
-      <h2>Formulario</h2>
       <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
         <div class="form-group">
           <label for="titulo">Título</label>
@@ -28,7 +27,7 @@
           <input type="text" id="duracion" name="duración">
         </div>
         <label for="completada">Tarea completada:</label>
-<input type="checkbox" id="completada" name="completada" value="1" <?php echo $tarea['completada'] ? 'checked' : ''; ?>>
+        <input type="checkbox" id="completada" name="completada" value="1" <?php echo $estado['1'] ? 'checked' : ''; ?>>
         <button type="submit">Editar Actividad</button>
       </form>
     </div>
