@@ -48,20 +48,20 @@ body {
 .nota {
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
+    border-radius: 5px; /* Reducimos el radio del borde */
+    padding: 8px; /* Reducimos el padding */
+    margin-bottom: 8px; /* Reducimos el margen inferior */
 }
 
 .nota-titulo {
-    font-size: 18px;
+    font-size: 16px; /* Reducimos el tamaño del título */
     font-weight: bold;
     color: #555;
     margin: 0;
 }
 
 .nota-descripcion {
-    font-size: 14px;
+    font-size: 12px; /* Reducimos el tamaño de la descripción */
     color: #777;
 }
 
