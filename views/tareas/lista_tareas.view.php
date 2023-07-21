@@ -22,18 +22,19 @@
 	<?php foreach ($resultadosconsulta as $resultadoconsulta): ?>
 		<div class="fecha-group">
 			<h3 class="fecha-titulo"><?php echo $resultadoconsulta['fecha_actividad']; ?></h3>
-			<?php foreach ($tareas as $tarea) : ?>
+			<?php endforeach; ?>
+			<?php foreach ($resultadosconsulta as $resultadoconsulta): ?>
             <div class="nota">
                 <h3 class="nota-titulo"><?php echo $resultadoconsulta['titulo']?></h3>
                 <p class="nota-descripcion"><?php echo $resultadoconsulta['descripcion']; ?></p>
             </div>
-			<?php endforeach; ?>
     	</div>
 	<?php endforeach; ?>
-	</div>
-</div>
+	
         <a href="anadir_tarea.php" target="">Crear Tarea</a>
 		<a href="index.php" target="">Volver</a>
+	</div>
+</div>
 	
 	</div>
 </body>
