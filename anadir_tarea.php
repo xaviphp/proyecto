@@ -17,9 +17,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } catch (\Throwable $th) {
     echo "Error: " . $e->getMessage();
 }
+$nombre_categoria = $_SESSION["categoria"];
+$consultacategoria = $conexion->query("SELECT id FROM categoria WHERE categoria.nombre_categoria = '$nombre_categoria'");
+$numerocategoria = $consultacategoria->fetch();
+$num = $numerocategoria['id'];
 
-
-$statement = $conexion->prepare('INSERT INTO tarea VALUES (null, 1, 1, :titulo, :descripcion, NOW(), :fechaActividad, :duracion, "false")');
+$statement = $conexion->prepare("INSERT INTO tarea VALUES (null, 1, $num, :titulo, :descripcion, NOW(), :fechaActividad, :duracion, 'false')");
 //Revisar si la sentencia SQL es correcta
 echo "OK sentencia correcta </br>";
 $statement->execute(

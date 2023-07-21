@@ -23,7 +23,7 @@
           <input type="date" id="fecha_actividad" name="fecha_actividad" required>
         </div>
         <div class="form-group">
-          <label for="duracion">DuraciÃ³n</label>
+          <label for="duracion">Duración</label>
           <input type="text" id="duracion" name="duracion">
         </div>
         <button type="submit">Añadir tarea</button>
