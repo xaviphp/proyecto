@@ -12,7 +12,7 @@
       <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
         <div class="form-group">
           <label for="titulo">Título</label>
-          <input type="text" id="titulo" name="titulo" value="<?php echo $resultadoconsulta['titulo']; ?>">
+          <input type="text" id="titulo" name="titulo" value="<?php echo $resultadosconsulta['titulo']; ?>">
         </div>
         <div class="form-group">
           <label for="descripcion">Descripción</label>

@@ -1,8 +1,6 @@
 <?php
 
-// Consulta SQL para traer datos de la tarea
-$statementconsulta = $conexion->query("SELECT * FROM tarea WHERE id = '$idtarea'");
-$resultadosconsulta = $statementconsulta->fetchAll();
+
 
 // Verificar si se ha enviado el formulario
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -24,7 +22,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } catch (\Throwable $th) {
     echo "Error: " . $e->getMessage();
 }
-
+// Consulta SQL para traer datos de la tarea
+$statementconsulta = $conexion->query("SELECT * FROM tarea WHERE id = '$idtarea'");
+$resultadosconsulta = $statementconsulta->fetchAll();
 
 $statement = $conexion->prepare('UPDATE tarea SET id_categoria = :id_categoria, titulo = :titulo, descripcion = :descripcion, fecha_actividad=:fechaActividad, duracion=:duracion, estado = :estado WHERE id = :id');
 //Revisar si la sentencia SQL es correcta
