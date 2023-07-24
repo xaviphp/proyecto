@@ -1,4 +1,9 @@
 <?php
+
+// Consulta SQL para traer datos de la tarea
+$statementconsulta = $conexion->query("SELECT * FROM tarea WHERE id = '$idtarea'");
+$resultadosconsulta = $statementconsulta->fetchAll();
+
 // Verificar si se ha enviado el formulario
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Obtener los valores del formulario
@@ -31,4 +36,5 @@ $statement->execute(
 echo "OK Todo enviado";
 }
 require './views/tareas/editar_tarea.view.php';
+
 ?>
