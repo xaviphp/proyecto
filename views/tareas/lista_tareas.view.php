@@ -27,6 +27,7 @@
             <div class="nota">
                 <h3 class="nota-titulo"><?php echo $resultadoconsulta['titulo']?></h3>
                 <p class="nota-descripcion"><?php echo $resultadoconsulta['descripcion']; ?></p>
+				<p class="estado"><?php echo $resultadoconsulta['estado']; ?></p>
             </div>
 			<?php endforeach; ?>
     	</div>
