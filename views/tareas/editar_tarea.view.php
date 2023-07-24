@@ -10,7 +10,7 @@
   <div class="container">
     <div class="main-content">
    
-      <form action="editar_tarea.php?id=<?php echo $nombre_categoria; ?>" method="POST">
+      <form action="editada_tarea.php" method="GET">
         <div class="form-group">
           <label for="titulo">Título</label>
           <input type="text" id="titulo" name="titulo" value="<?php echo $titulo; ?>">
@@ -22,8 +22,9 @@
         <div class="form-group">
           <label for="categoria">Categoría</label>
           <select id="categoria" name="categoria">
+          <option value="" selected ><?php echo $nombre_categoria; ?></option>
             <?php foreach ($resultadosconsulta2 as $resultadoconsulta2): ?>
-              <option value="<?php echo $resultadoconsulta2['id']; ?>"><?php echo $resultadoconsulta2['nombre_categoria']; ?></option>
+              <option value="<?php echo $resultadoconsulta2['id']; ?>" ><?php echo $resultadoconsulta2['nombre_categoria']; ?></option>
             <?php endforeach; ?>
           </select>
         </div>

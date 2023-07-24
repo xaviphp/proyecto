@@ -1,11 +1,8 @@
 <?php
 session_start();
 
-$_SESSION['id'] = $_GET["id"];
+  $idtarea = $_SESSION['id'];
 
-if (isset($_GET["id"])) {
-  $idtarea = $_GET["id"];
-};
 
 // echo $idtarea;
 
@@ -24,14 +21,8 @@ $fecha_actividad=$resultadosconsulta[0]['fecha_actividad'];
 $duracion=$resultadosconsulta[0]['duracion'];
 $estado=$resultadosconsulta[0]['estado'];
 
-// Consulta SQL para traer las categorias existentes
-$statementconsulta2 = $conexion->query("SELECT * FROM categoria");
-$resultadosconsulta2 = $statementconsulta2->fetchAll();
-// print_r($resultadosconsulta2);
-$id_categoria=$resultadosconsulta2[0]['id'];
-$nombre_categoria=$resultadosconsulta2[0]['nombre_categoria'];
 
-require './views/tareas/editar_tarea.view.php';
+require './views/tareas/editada_tarea.view.php';
 
 if (isset($GET['submit'])) {
   $tituloUpdate = $GET['titulo'];
@@ -39,7 +30,6 @@ if (isset($GET['submit'])) {
   $statement->execute(
       array(':id_categoria' => $id_categoria,':titulo'=> $tituloUpdate, ':descripcion'=> $descripcion, ':fecha_actividad'=> $fecha_actividad, ':duracion'=> $duracion, ':estado'=> $estado )
   );
-$_SESSION['titulo']=$tituloUpdate;  
 }
 
 
