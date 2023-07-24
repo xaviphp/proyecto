@@ -33,7 +33,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 		// Comprobamos que el usuario no exista ya.
 		try {
-			$conexion = new PDO('mysql:host=localhost;dbname=curso_login', 'root', '');
+			$conexion = new PDO('mysql:host=localhost;dbname=gestion_actividades', 'root', '');
 		} catch (PDOException $e) {
 			echo "Error:" . $e->getMessage();
 		}

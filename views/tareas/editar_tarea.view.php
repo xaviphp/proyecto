@@ -10,7 +10,7 @@
   <div class="container">
     <div class="main-content">
    
-      <form action="lista_tareas.php?categoria=<?php echo $nombre_categoria; ?>" method="GET">
+      <form action="editar_tarea.php?id=<?php echo $nombre_categoria; ?>" method="POST">
         <div class="form-group">
           <label for="titulo">Título</label>
           <input type="text" id="titulo" name="titulo" value="<?php echo $titulo; ?>">

@@ -31,9 +31,13 @@ $nombre_categoria=$resultadosconsulta2[0]['nombre_categoria'];
 
 require './views/tareas/editar_tarea.view.php';
 
+if (isset($_POST['submit'])) {
+  $tituloUpdate = $_POST['titulo'];
+}
+
 $statement = $conexion->prepare("UPDATE tarea SET id_categoria = :id_categoria, titulo = :titulo, descripcion = :descripcion, fecha_actividad=:fecha_actividad, duracion=:duracion, estado = :estado WHERE id = '$idtarea'");
 $statement->execute(
-  array(':id_categoria' => $id_categoria,':titulo'=> $titulo, ':descripcion'=> $descripcion, ':fecha_actividad'=> $fecha_actividad, ':duracion'=> $duracion, ':estado'=> $estado )
+  array(':id_categoria' => $id_categoria,':titulo'=> $tituloUpdate, ':descripcion'=> $descripcion, ':fecha_actividad'=> $fecha_actividad, ':duracion'=> $duracion, ':estado'=> $estado )
 );
 
 
