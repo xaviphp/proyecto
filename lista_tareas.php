@@ -20,6 +20,6 @@ if (isset($_SESSION["categoria"])) {
 }
 
 
-	require './views/tareas/lista_tareas.view.php';
+require './views/tareas/lista_tareas.view.php';
 
 ?>
