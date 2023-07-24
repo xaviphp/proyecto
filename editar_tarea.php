@@ -23,8 +23,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "Error: " . $e->getMessage();
 }
 // Consulta SQL para traer datos de la tarea
-$statementconsulta = $conexion->query("SELECT * FROM tarea WHERE id = '$idtarea'");
+$statementconsulta = $conexion->query("SELECT * FROM tarea WHERE id = :idtarea");
 $resultadosconsulta = $statementconsulta->fetchAll();
+
+// Consulta SQL para traer datos de la tarea
+$statementconsulta2 = $conexion->query("SELECT * FROM categorias");
+$resultadosconsulta2 = $statementconsulta2->fetchAll();
 
 $statement = $conexion->prepare('UPDATE tarea SET id_categoria = :id_categoria, titulo = :titulo, descripcion = :descripcion, fecha_actividad=:fechaActividad, duracion=:duracion, estado = :estado WHERE id = :id');
 //Revisar si la sentencia SQL es correcta

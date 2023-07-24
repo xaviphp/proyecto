@@ -9,10 +9,11 @@
 
   <div class="container">
     <div class="main-content">
+   
       <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
         <div class="form-group">
           <label for="titulo">Título</label>
-          <input type="text" id="titulo" name="titulo" value="<?php echo $resultadosconsulta['titulo']; ?>">
+          <input type="text" id="titulo" name="titulo" value="<?php echo $resultadoconsulta['titulo']; ?>">
         </div>
         <div class="form-group">
           <label for="descripcion">Descripción</label>
@@ -21,9 +22,10 @@
         <div class="form-group">
           <label for="categoria">Categoría</label>
           <select id="categoria" name="categoria">
-            <?php foreach ($resultadosconsulta as $resultadoconsulta): ?>
-              <option value="<?php echo $resultadoconsulta['categoria']; ?>">value="<?php echo $resultadoconsulta['categoria']; ?>"</option>
+            <?php foreach ($resultadosconsulta2 as $resultadoconsulta2): ?>
+              <option value="<?php echo $resultadoconsulta2['nombre_categoria']; ?>">value="<?php echo $resultadoconsulta['nombre_categoria']; ?>"</option>
             <?php endforeach; ?>
+
           </select>
         </div>
         <div class="form-group">
