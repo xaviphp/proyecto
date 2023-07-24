@@ -22,7 +22,7 @@
         <div class="form-group">
           <label for="categoria">Categoría</label>
           <select id="categoria" name="categoria">
-          <option value="" selected ><?php echo $nombre_categoria; ?></option>
+          <option value="<?php echo $_SESSION["categoria"] ?>" selected ><?php echo $_SESSION["categoria"] ?></option>
             <?php foreach ($resultadosconsulta2 as $resultadoconsulta2): ?>
               <option value="<?php echo $resultadoconsulta2['id']; ?>" ><?php echo $resultadoconsulta2['nombre_categoria']; ?></option>
             <?php endforeach; ?>
