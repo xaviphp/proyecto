@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	// Nos conectamos a la base de datos
 	try {
-		$conexion = new PDO('mysql:host=localhost;dbname=curso_login', 'root', '');
+		$conexion = new PDO('mysql:host=localhost;dbname=gestion_actividades', 'root', '');
 	} catch (PDOException $e) {
 		echo "Error:" . $e->getMessage();
 	}

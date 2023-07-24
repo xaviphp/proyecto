@@ -1,18 +1,6 @@
 <?php
 
-
-
-// Verificar si se ha enviado el formulario
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Obtener los valores del formulario
-  $idtarea = $_POST['idtarea'];
-  $id_categoria = $_POST['id_categoria'];
-  $titulo = $_POST['titulo'];
-  $descripcion = $_POST['descripcion'];
-  $fechaCreacion = $_POST['fecha_creacion'];
-  $fechaActividad = $_POST['fecha_actividad'];
-  $duracion = $_POST['duracion'];
-  $estado = $_POST['estado'];
+  $idtarea = $GET['id'];
 
   // Aqui puedes realizar la lóoca para guardar la actividad en la base de datos o en algúnutro lugar
 
@@ -23,11 +11,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "Error: " . $e->getMessage();
 }
 // Consulta SQL para traer datos de la tarea
-$statementconsulta = $conexion->query("SELECT * FROM tarea WHERE id = :idtarea");
+$statementconsulta = $conexion->query("SELECT * FROM tarea WHERE id =  $idtarea");
 $resultadosconsulta = $statementconsulta->fetchAll();
 
-// Consulta SQL para traer datos de la tarea
-$statementconsulta2 = $conexion->query("SELECT * FROM categorias");
+// Consulta SQL para traer las categorias existentes
+$statementconsulta2 = $conexion->query("SELECT * FROM categoria");
 $resultadosconsulta2 = $statementconsulta2->fetchAll();
 
 $statement = $conexion->prepare('UPDATE tarea SET id_categoria = :id_categoria, titulo = :titulo, descripcion = :descripcion, fecha_actividad=:fechaActividad, duracion=:duracion, estado = :estado WHERE id = :id');
@@ -38,7 +26,6 @@ $statement->execute(
 );
 //Revisar si se ha enviado todo OK
 echo "OK Todo enviado";
-}
 require './views/tareas/editar_tarea.view.php';
 
 ?>

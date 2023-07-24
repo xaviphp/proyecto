@@ -17,20 +17,19 @@
         </div>
         <div class="form-group">
           <label for="descripcion">Descripción</label>
-          <input type="text" id="descripcion" name="descripción" value="<?php echo $resultadoconsulta['titulo']; ?>">
+          <input type="text" id="descripcion" name="descripción" value="<?php echo $resultadoconsulta['descripcion']; ?>">
         </div>
         <div class="form-group">
           <label for="categoria">Categoría</label>
           <select id="categoria" name="categoria">
             <?php foreach ($resultadosconsulta2 as $resultadoconsulta2): ?>
-              <option value="<?php echo $resultadoconsulta2['nombre_categoria']; ?>">value="<?php echo $resultadoconsulta['nombre_categoria']; ?>"</option>
+              <option value="<?php echo $resultadoconsulta2['nombre_categoria']; ?>">value="<?php echo $resultadoconsulta2['nombre_categoria']; ?>"</option>
             <?php endforeach; ?>
-
           </select>
         </div>
         <div class="form-group">
           <label for="fecha_actividad">Fecha de Actividad</label>
-          <input type="date" id="fecha_actividad" name="fecha_actividad" required>
+          <input type="date" id="fecha_actividad" name="fecha_actividad"  value="<?php echo $resultadoconsulta['fecha_actividad']; ?>">
         </div>
         <div class="form-group">
           <label for="duracion">Duración</label>
