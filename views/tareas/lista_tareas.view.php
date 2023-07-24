@@ -21,13 +21,18 @@
 	<?php foreach ($resultadosconsulta as $resultadoconsulta): ?>
 		<div class="fecha-group">
 			
-			<h3 class="fecha-titulo"><a href="/editar_tarea.php?id=<?php $resultadoconsulta['id'] ?>"><?php echo $resultadoconsulta['fecha_actividad']; ?></a></h3>
+			<h3 class="fecha-titulo"><?php echo $resultadoconsulta['fecha_actividad']; ?></h3>
 			
 			<?php foreach ($resultadosconsulta as $resultadoconsulta): ?>
             <div class="nota">
-                <h3 class="nota-titulo"><?php echo $resultadoconsulta['titulo']?></h3>
+                <h3 class="nota-titulo"><a href="editar_tarea.php?id=<?php echo $resultadoconsulta['id'] ?>"><?php echo $resultadoconsulta['titulo']?></a></h3>
                 <p class="nota-descripcion"><?php echo $resultadoconsulta['descripcion']; ?></p>
-				<p class="estado"><?php echo $resultadoconsulta['estado']; ?></p>
+				<p class="estado"><?php 
+				if($resultadoconsulta['estado']==0){
+					echo "Tarea Sin Completar";
+				}else{
+					echo"Tarea Completada";
+				} ?></p>
             </div>
 			<?php endforeach; ?>
     	</div>
