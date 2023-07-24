@@ -35,7 +35,7 @@
 				} ?></p>
 				<form action="eliminar_tarea.php" method="post">
                 <input type="hidden" name="id_tarea" value="<?php echo $resultadoconsulta['id'] ?>">
-                <input class="delete-boton" type="submit" name="submit" value="X" onclick="return confirmarEliminar()">
+                <input class="delete-boton" type="submit" name="submit" value="Eliminar tarea">
             </form>
             </div>
 			<?php endforeach; ?>
