@@ -42,7 +42,7 @@
     	</div>
 	<?php endforeach; ?>
 	
-		<a href="index.php" target="">Volver</a>
+	<a class="button-volver" href="index.php">Volver</a>
 	</div>
 </div>
 	

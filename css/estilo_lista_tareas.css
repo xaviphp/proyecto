@@ -113,3 +113,20 @@ body {
 .form-group button:hover {
     background-color: #555;
 }
+/* Estilo para el botÃ³n de volver */
+.button-volver {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    text-align: center;
+    background-color: #007bff; /* Color azul */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px; /* Espacio entre el botÃ³n y el formulario */
+  }
+  
+  .button-volver:hover {
+    background-color: #0056b3; /* Color azul oscuro al pasar el mouse */
+  }

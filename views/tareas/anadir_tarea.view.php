@@ -27,7 +27,7 @@
           <input type="text" id="duracion" name="duracion">
         </div>
         <button type="submit">Añadir tarea</button>
-        <a href="index.php" target="">Volver</a>
+        <a class="button-volver" href="index.php">Volver</a>
       </form>
     </div>
   </div>
