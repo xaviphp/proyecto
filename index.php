@@ -1,5 +1,4 @@
 <?php session_start();
-print_r($_SESSION['IDUSUARIO']);
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,6 +8,7 @@ print_r($_SESSION['IDUSUARIO']);
 </head>
 <body>
   <h1>To-Do List App</h1>
+  <a href="logout.php">Cerrar sesión</a>
 
   <div class="container">
     <div class="sidebar">

@@ -1,5 +1,6 @@
 <?php
 session_start();
+$idusuario = $_SESSION['IDUSUARIO'];
 // Verificar si se ha enviado el formulario
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Obtener los valores del formulario
@@ -21,7 +22,7 @@ $consultacategoria = $conexion->query("SELECT id FROM categoria WHERE categoria.
 $numerocategoria = $consultacategoria->fetch();
 $num = $numerocategoria['id'];
 
-$statement = $conexion->prepare("INSERT INTO tarea VALUES (null, 1, $num, :titulo, :descripcion, NOW(), :fechaActividad, :duracion, 'false')");
+$statement = $conexion->prepare("INSERT INTO tarea VALUES (null, $idusuario, $num, :titulo, :descripcion, NOW(), :fechaActividad, :duracion, 'false')");
 //Revisar si la sentencia SQL es correcta
 echo "OK sentencia correcta </br>";
 $statement->execute(

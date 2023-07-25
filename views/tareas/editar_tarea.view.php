@@ -39,6 +39,8 @@
         <label for="completada">Tarea completada:</label>
         <input type="checkbox" id="completada" name="completada">
         <button type="submit">ACTUALIZAR</button>
+        <a class="button-volver" href="index.php">Volver</a>
+
       </form>
     </div>
   </div>
