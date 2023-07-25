@@ -1,5 +1,6 @@
 <?php session_start();
 ?>
+<? require 'logout.view.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +8,8 @@
   <link rel="stylesheet" type="text/css" href="./css/estilo_index.css">
 </head>
 <body>
+  
   <h1>To-Do List App</h1>
-  <a href="logout.php">Cerrar sesión</a>
 
   <div class="container">
     <div class="sidebar">

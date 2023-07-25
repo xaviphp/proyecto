@@ -1,3 +1,4 @@
+<? require 'logout.view.php' ?>
 <!DOCTYPE html>
 <html>
 <head>

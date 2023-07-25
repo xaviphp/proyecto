@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/estilo_lista_tareas.css">
 </head>
 <body>
+<?php require 'logout.view.php' ?>
+
 <div>
 	<div class="container">
 		<div class="header">

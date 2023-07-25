@@ -5,6 +5,7 @@ $_SESSION['id'] = $_GET["id"];
 
 if (isset($_GET["id"])) {
   $idtarea = $_GET["id"];
+  $_SESSION['IDTAREA']= $_GET["id"];
 };
 
 // echo $idtarea;
@@ -14,6 +15,7 @@ try {
 } catch (\Throwable $th) {
   echo "Error: " . $e->getMessage();
 }
+echo $idtarea;
 // Consulta SQL para traer datos de la tarea
 $statementconsulta = $conexion->query("SELECT * FROM tarea WHERE id =  $idtarea");
 $resultadosconsulta = $statementconsulta->fetchAll();
@@ -33,17 +35,22 @@ $nombre_categoria=$resultadosconsulta2[0]['nombre_categoria'];
 
 require './views/tareas/editar_tarea.view.php';
 
-if (isset($GET['submit'])) {
-  $tituloUpdate = $GET['titulo'];
-  $statement = $conexion->prepare("UPDATE tarea SET id_categoria = :id_categoria, titulo = :titulo, descripcion = :descripcion, fecha_actividad=:fecha_actividad, duracion=:duracion, estado = :estado WHERE id = '$idtarea'");
-  $statement->execute(
-      array(':id_categoria' => $id_categoria,':titulo'=> $tituloUpdate, ':descripcion'=> $descripcion, ':fecha_actividad'=> $fecha_actividad, ':duracion'=> $duracion, ':estado'=> $estado )
-  );
-$_SESSION['titulo']=$tituloUpdate;  
+if (isset($_GET['submit'])) {
+  $tituloUpdate = $_GET['titulo'];
+  
+  $statement = $conexion->prepare("UPDATE tarea SET id_categoria = :id_categoria, titulo = :titulo, descripcion = :descripcion, fecha_actividad = :fecha_actividad, duracion = :duracion, estado = :estado WHERE id = :idtarea");
+  $statement->execute(array(
+    ':id_categoria' => $id_categoria,
+    ':titulo' => $tituloUpdate,
+    ':descripcion' => $descripcion,
+    ':fecha_actividad' => $fecha_actividad,
+    ':duracion' => $duracion,
+    ':estado' => $estado,
+    ':idtarea' => $idtarea
+  ));
 }
 
-
-
+$_SESSION['titulo']=$tituloUpdate;  
 
 
 ?>

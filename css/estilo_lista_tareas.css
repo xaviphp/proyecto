@@ -54,14 +54,14 @@ body {
 }
 
 .nota-titulo {
-    font-size: 16px; /* Reducimos el tamaÃÂÃÂ±o del tÃÂÃÂ­tulo */
+    font-size: 16px; /* Reducimos el tamaÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ±o del tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­tulo */
     font-weight: bold;
     color: #555;
     margin: 0;
 }
 
 .nota-descripcion {
-    font-size: 12px; /* Reducimos el tamaÃÂÃÂ±o de la descripciÃÂÃÂ³n */
+    font-size: 12px; /* Reducimos el tamaÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ±o de la descripciÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³n */
     color: #777;
 }
 
@@ -113,7 +113,7 @@ body {
 .form-group button:hover {
     background-color: #555;
 }
-/* Estilo para el botÃÂ³n de volver */
+/* Estilo para el botÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³n de volver */
 .button-volver {
     display: block;
     width: 94%;
@@ -124,8 +124,8 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 20px; /* Espacio entre el botÃÂ³n y el formulario */
-    margin-right: 20px; /* Espacio entre el botÃÂ³n y el formulario */
+    margin-top: 20px; /* Espacio entre el botÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³n y el formulario */
+    margin-right: 20px; /* Espacio entre el botÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ³n y el formulario */
 
   }
   

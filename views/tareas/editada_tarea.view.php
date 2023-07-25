@@ -1,3 +1,4 @@
+<? require 'logout.view.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +10,6 @@
     <div class="main-content" style="text-align:center">
       <h2>Tarea Actualizada</h2>
       <a class="button-volver" href="lista_tareas.php?categoria=<?php echo $_SESSION["categoria"] ?>">Volver</a>
-
     </div>
   </div>
 </body>

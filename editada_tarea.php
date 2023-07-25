@@ -1,7 +1,7 @@
 <?php
 session_start();
-
-  $idtarea = $_SESSION['id'];
+ echo$_SESSION['IDTAREA'];
+  $idtarea = $_SESSION['IDTAREA'];
 
 
 // echo $idtarea;
