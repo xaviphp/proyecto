@@ -1,3 +1,6 @@
+<?php session_start();
+print_r($_SESSION['IDUSUARIO']);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,4 +38,4 @@
     </div>
   </div>
 </body>
-</html>
+</html> 

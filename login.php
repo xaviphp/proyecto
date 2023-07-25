@@ -9,7 +9,7 @@ if (isset($_SESSION['usuario'])) {
 
 // Comprobamos si ya han sido enviado los datos
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-	$usuario = filter_var(strtolower($_POST['usuario']), FILTER_SANITIZE_STRING);
+	$usuario = strtolower($_POST['usuario']);
 	$password = $_POST['password'];
 	$password = hash('sha512', $password);
 
@@ -29,6 +29,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$resultado = $statement->fetch();
 	if ($resultado !== false) {
 		$_SESSION['usuario'] = $usuario;
+		echo $usuario;
+		$statement2 = $conexion->query("SELECT id FROM usuarios WHERE usuario = '$usuario'");
+		$resultado2 = $statement2->fetch();
+		$_SESSION['IDUSUARIO']=$resultado2['id'];
 		header('Location: index.php');
 	} else {
 		$errores = '<li>Datos incorrectos</li>';

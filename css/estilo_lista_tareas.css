@@ -54,14 +54,14 @@ body {
 }
 
 .nota-titulo {
-    font-size: 16px; /* Reducimos el tamaÃÂ±o del tÃÂ­tulo */
+    font-size: 16px; /* Reducimos el tamaÃÂÃÂ±o del tÃÂÃÂ­tulo */
     font-weight: bold;
     color: #555;
     margin: 0;
 }
 
 .nota-descripcion {
-    font-size: 12px; /* Reducimos el tamaÃÂ±o de la descripciÃÂ³n */
+    font-size: 12px; /* Reducimos el tamaÃÂÃÂ±o de la descripciÃÂÃÂ³n */
     color: #777;
 }
 
@@ -113,10 +113,10 @@ body {
 .form-group button:hover {
     background-color: #555;
 }
-/* Estilo para el botÃ³n de volver */
+/* Estilo para el botÃÂ³n de volver */
 .button-volver {
     display: block;
-    width: 100%;
+    width: 94%;
     padding: 13px;
     text-align: center;
     background-color: #007bff; /* Color azul */
@@ -124,7 +124,9 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 20px; /* Espacio entre el botÃ³n y el formulario */
+    margin-top: 20px; /* Espacio entre el botÃÂ³n y el formulario */
+    margin-right: 20px; /* Espacio entre el botÃÂ³n y el formulario */
+
   }
   
   .button-volver:hover {
