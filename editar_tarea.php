@@ -15,7 +15,6 @@ try {
 } catch (\Throwable $th) {
   echo "Error: " . $e->getMessage();
 }
-echo $idtarea;
 // Consulta SQL para traer datos de la tarea
 $statementconsulta = $conexion->query("SELECT * FROM tarea WHERE id =  $idtarea");
 $resultadosconsulta = $statementconsulta->fetchAll();
@@ -49,8 +48,5 @@ if (isset($_GET['submit'])) {
     ':idtarea' => $idtarea
   ));
 }
-
-$_SESSION['titulo']=$tituloUpdate;  
-
 
 ?>

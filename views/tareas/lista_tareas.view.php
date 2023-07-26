@@ -22,7 +22,7 @@
 			<?php foreach ($resultadosconsulta as $resultadoconsulta): ?>
 				<div class="fecha-group">
 					<h3 class="fecha-titulo"><?php echo $resultadoconsulta['fecha_actividad']; ?></h3>
-					<?php foreach ($resultadosconsulta as $resultadoconsulta): ?>
+					
 					<div class="nota">
 					<h3 class="nota-titulo"><a href="editar_tarea.php?id=<?php echo $resultadoconsulta['id'] ?>"><?php echo $resultadoconsulta['titulo']?></a></h3>
 					<p class="nota-descripcion"><?php echo $resultadoconsulta['descripcion']; ?></p>
@@ -37,7 +37,7 @@
 						<input class="delete-boton" type="submit" name="submit" value="Eliminar tarea">
 					</form>
 				</div>
-			<?php endforeach; ?>
+			
 	
 		</div>
 		<?php endforeach; ?>

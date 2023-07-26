@@ -1,6 +1,5 @@
 <?php session_start();
 ?>
-<? require 'logout.view.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="./css/estilo_index.css">
 </head>
 <body>
+<?php require './views/tareas/logout.view.php' ?>
   
   <h1>To-Do List App</h1>
 

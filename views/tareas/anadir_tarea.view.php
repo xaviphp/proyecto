@@ -1,4 +1,3 @@
-<? require 'logout.view.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +5,8 @@
   <link rel="stylesheet" type="text/css" href="css/estilo_anadir-editar.css">
 </head>
 <body>
+<?php require 'logout.view.php' ?>
+
   <h1>Añadir Actividad <?php echo $_SESSION["categoria"]; ?></h1>
 
   <div class="container">

@@ -6,6 +6,8 @@
   <link rel="stylesheet" type="text/css" href="css/estilo_anadir-editar.css">
 </head>
 <body>
+<?php require 'logout.view.php' ?>
+
   <h1>Editar Actividad</h1>
 
   <div class="container">
